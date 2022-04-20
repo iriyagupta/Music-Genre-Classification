@@ -28,7 +28,7 @@ def split(data,target):
     return X_dev, y_dev, X_test, y_test, X_train, y_train, X_val, y_val
     
     
-def cm(y_pred, y_true, class_labels, model_name = ''):
+def evaluate_model(y_pred, y_true, class_labels, model_name = ''):
     results = classification_report(y_pred, y_true, output_dict = True )
     macro_f1 = results['macro avg']['f1-score']
     accuracy = results['accuracy']
@@ -36,6 +36,7 @@ def cm(y_pred, y_true, class_labels, model_name = ''):
     cm = confusion_matrix(y_pred, y_true)
     disp = ConfusionMatrixDisplay(confusion_matrix = cm, display_labels = class_labels)
     disp.plot(xticks_rotation = 45, cmap=plt.cm.Blues)
+    plt.grid(False)
     plt.title(model_name)
     plt.show()
     return macro_f1, accuracy
