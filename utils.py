@@ -25,6 +25,9 @@ def split(data,target):
     print("X_train shape:", X_train.shape)
     print("X_test shape:", X_test.shape)
     print("X_val shape:", X_val.shape)
+    print("y_train shape:", y_train.shape)
+    print("y_test shape:", y_test.shape)
+    print("y_val shape:", y_val.shape)
     return X_dev, y_dev, X_test, y_test, X_train, y_train, X_val, y_val
     
     
