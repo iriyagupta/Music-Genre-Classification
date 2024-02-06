@@ -1,4 +1,4 @@
-# TITLE : MUSIC GENRE CLASSIFICATION
+### MUSIC GENRE CLASSIFICATION
 
 
 Music moves us all, and has no boundaries – figuratively and literally. As humans, we tend to classify music as belonging to various genres, such as Pop, Rock, Blues, Jazz, Electronic Dance Music, Classical Music, and quite a few more. This classification is often multi-class, and multi-bin, in that a given song could fall into more than one genre. For example, a given song could be classified both as a Rock and Pop song, or, another song could be classified both as Electronic and Synthpop. 
